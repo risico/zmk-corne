@@ -57,6 +57,11 @@
             bindings = <&kp ESC>;
             key-positions = <19 20>;
         };
+
+        screenshot_mac {
+            bindings = <&kp LC(LG(NUMBER_3))>;
+            key-positions = <6 5>;
+        };
     };
 
     keymap {
@@ -107,10 +112,10 @@
         game_default_layer {
             label = " GAME";
             bindings = <
-       &kp TAB  &kp Q  &kp W  &kp E      &kp R  &kp T     &none   &none   &none  &none  &none  &to 0
-     &kp LCTRL  &kp A  &kp S  &kp D      &kp F  &kp G     &none   &none   &none  &none  &none  &none
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V  &kp B     &none   &none   &none  &none  &none  &none
-                              &mo 5  &kp SPACE  &mo 6    &trans  &trans  &trans
+       &kp TAB  &kp Q  &kp W  &kp E      &kp R  &kp T    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &to 0
+     &kp LCTRL  &kp A  &kp S  &kp D      &kp F  &kp G           &none         &none         &none         &none         &none  &none
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V  &kp B           &none         &none         &none         &none         &none  &none
+                              &mo 5  &kp SPACE  &mo 6          &trans        &trans        &trans
             >;
         };
 
