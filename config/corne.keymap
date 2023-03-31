@@ -59,8 +59,8 @@
         };
 
         screenshot_mac {
-            bindings = <&kp LC(LG(NUMBER_3))>;
-            key-positions = <6 5>;
+            bindings = <&kp LS(LG(NUMBER_4))>;
+            key-positions = <1 3 2>;
         };
     };
 
