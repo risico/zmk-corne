@@ -94,10 +94,10 @@
         raise_layer {
             label = " RAISE";
             bindings = <
-&none           &none     &kp UP    &none      &none   &none     &kp F1  &kp F2   &kp F3   &kp F4   &none  &none
-&kp LCTRL       &kp LEFT  &kp DOWN  &kp RIGHT  &none   &none     &kp F5  &kp F6   &kp F7   &kp F8   &none  &none
-&kp LEFT_SHIFT  &none     &none     &none      &none   &none     &kp F9  &kp F10  &kp F11  &kp F12  &none  &none
-                                    &trans     &trans  &trans    &none   &none    &none
+&none           &none     &kp UP    &none      &none   &out OUT_TOG    &kp F1  &kp F2   &kp F3   &kp F4   &none  &none
+&kp LCTRL       &kp LEFT  &kp DOWN  &kp RIGHT  &none   &none           &kp F5  &kp F6   &kp F7   &kp F8   &none  &none
+&kp LEFT_SHIFT  &none     &none     &none      &none   &none           &kp F9  &kp F10  &kp F11  &kp F12  &none  &none
+                                    &trans     &trans  &trans          &none   &none    &none
             >;
         };
 
