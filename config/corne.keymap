@@ -45,9 +45,7 @@
             tapping-term-ms = <200>;// <---[[moderate duration]]
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -76,40 +74,40 @@
         default_layer {
             label = " DEFAULT";
             bindings = <
-         &kp TAB  &kp Q  &kp W             &kp E         &kp R      &kp T        &kp Y  &kp U      &kp I    &kp O     &kp P  &kp BSPC
-&kp LEFT_CONTROL  &kp A  &kp S             &kp D         &kp F      &kp G        &kp H  &kp J      &kp K    &kp L  &kp SEMI   &kp SQT
-       &kp LSHFT  &kp Z  &kp X             &kp C         &kp V      &kp B        &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH   &kp ESC
-                                &kp LEFT_COMMAND  &kp LEFT_ALT  &kp SPACE    &kp ENTER  &mo 1      &mo 2
+&kp TAB           &kp Q  &kp W  &kp E             &kp R         &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp LEFT_CONTROL  &kp A  &kp S  &kp D             &kp F         &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT         &kp Z  &kp X  &kp C             &kp V         &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                                &kp LEFT_COMMAND  &kp LEFT_ALT  &kp SPACE    &kp ENTER  &mo 1  &mo 2
             >;
         };
 
         lower_layer {
             label = " LOWER";
             bindings = <
-     &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5       &kp N6            &kp N7             &kp N8         &kp N9  &kp N0  &kp MINUS
-     &kp LCTRL  &trans   &none   &none   &none   &none    &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH   &none      &none
-&kp LEFT_SHIFT   &none   &none   &none   &none   &none        &none             &none              &none          &none   &none      &none
-                                &trans  &trans  &trans       &trans            &trans             &trans
+&kp GRAVE       &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6     &kp N7            &kp N8             &kp N9         &kp N0  &kp MINUS
+&kp LCTRL       &trans  &none   &none   &none   &none     &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &none   &none
+&kp LEFT_SHIFT  &none   &none   &none   &none   &none     &none      &none             &none              &none          &none   &none
+                                &trans  &trans  &trans    &trans     &trans            &trans
             >;
         };
 
         raise_layer {
             label = " RAISE";
             bindings = <
-         &none     &none    &kp UP      &none   &none   &none    &kp F1   &kp F2   &kp F3   &kp F4  &none  &none
-     &kp LCTRL  &kp LEFT  &kp DOWN  &kp RIGHT   &none   &none    &kp F5   &kp F6   &kp F7   &kp F8  &none  &none
-&kp LEFT_SHIFT     &none     &none      &none   &none   &none    &kp F9  &kp F10  &kp F11  &kp F12  &none  &none
-                                       &trans  &trans  &trans     &none    &none    &none
+&none           &none     &kp UP    &none      &none   &none     &kp F1  &kp F2   &kp F3   &kp F4   &none  &out OUT_BLE
+&kp LCTRL       &kp LEFT  &kp DOWN  &kp RIGHT  &none   &none     &kp F5  &kp F6   &kp F7   &kp F8   &none  &out OUT_USB
+&kp LEFT_SHIFT  &none     &none     &none      &none   &none     &kp F9  &kp F10  &kp F11  &kp F12  &none  &none
+                                    &trans     &trans  &trans    &none   &none    &none
             >;
         };
 
         adjust_layer {
             label = " ADJUST";
             bindings = <
-&none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &none  &bt BT_CLR            &trans          &trans         &none         &none         &none         &none  &out OUT_TOG
-&none         &kp C_PREV       &kp C_NEXT   &none      &trans            &trans    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4        &trans
-&none    &kp PAUSE_BREAK         &kp C_PP   &none       &none  &kp C_SLEEP_MODE           &none         &none         &none         &none         &none         &none
-                                           &trans      &trans            &trans          &trans        &trans        &trans
+&none  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none   &bt BT_CLR  &trans              &trans        &none         &none         &none         &none         &out OUT_TOG
+&none  &kp C_PREV         &kp C_NEXT       &none   &trans      &trans              &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
+&none  &kp PAUSE_BREAK    &kp C_PP         &none   &none       &kp C_SLEEP_MODE    &none         &none         &none         &none         &none         &none
+                                           &trans  &trans      &trans              &trans        &trans        &trans
             >;
         };
 
@@ -118,29 +116,29 @@
         game_default_layer {
             label = " GAME";
             bindings = <
-       &kp TAB  &kp Q  &kp W  &kp E      &kp R  &kp T    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &to 0
-     &kp LCTRL  &kp A  &kp S  &kp D      &kp F  &kp G           &none         &none         &none         &none         &none  &none
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V  &kp B           &none         &none         &none         &none         &none  &none
-                              &mo 5  &kp SPACE  &mo 6          &trans        &trans        &trans
+&kp TAB         &kp Q  &kp W  &kp E  &kp R      &kp T    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &to 0
+&kp LCTRL       &kp A  &kp S  &kp D  &kp F      &kp G    &none         &none         &none         &none         &none         &none
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C  &kp V      &kp B    &none         &none         &none         &none         &none         &none
+                              &mo 5  &kp SPACE  &mo 6    &trans        &trans        &trans
             >;
         };
 
         game_right_layer {
             label = " GAME R";
             bindings = <
-&kp LBKT     &kp P    &kp O      &kp I   &kp U   &kp Y     &none   &none   &none  &none  &none  &none
- &kp SQT  &kp SEMI    &kp L      &kp K   &kp J   &kp H     &none   &none   &none  &none  &none  &none
-&kp RBKT  &kp FSLH  &kp DOT  &kp COMMA   &kp M   &kp N     &none   &none   &none  &none  &none  &none
-                                &trans  &trans  &trans    &trans  &trans  &trans
+&kp LBKT  &kp P     &kp O    &kp I      &kp U   &kp Y     &none   &none   &none   &none  &none  &none
+&kp SQT   &kp SEMI  &kp L    &kp K      &kp J   &kp H     &none   &none   &none   &none  &none  &none
+&kp RBKT  &kp FSLH  &kp DOT  &kp COMMA  &kp M   &kp N     &none   &none   &none   &none  &none  &none
+                             &trans     &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         game_num_layer {
             label = " GAME N";
             bindings = <
- &kp F6  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &none   &none   &none  &none  &none  &none
-&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5     &none   &none   &none  &none  &none  &none
- &kp F7  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0     &none   &none   &none  &none  &none  &none
+&kp F6   &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &none   &none   &none   &none  &none  &none
+&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &none   &none   &none   &none  &none  &none
+&kp F7   &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &none   &none   &none   &none  &none  &none
                          &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
